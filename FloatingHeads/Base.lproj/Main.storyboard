@@ -13,13 +13,41 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inbox" translatesAutoresizingMaskIntoConstraints="NO" id="TmX-Yt-k0q">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mDU-3b-2AY" customClass="FloatingButton" customModule="FloatingHeads" customModuleProvider="target">
+                                <rect key="frame" x="315" y="619" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="h1k-II-4oP"/>
+                                    <constraint firstAttribute="width" constant="40" id="jRB-Bq-buf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" image="icon-add"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="mDU-3b-2AY" secondAttribute="trailing" constant="20" id="8XO-Nw-JEr"/>
+                            <constraint firstItem="TmX-Yt-k0q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PHg-I6-KwO"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TmX-Yt-k0q" secondAttribute="bottom" id="byh-L4-ou3"/>
+                            <constraint firstAttribute="trailing" secondItem="TmX-Yt-k0q" secondAttribute="trailing" id="erO-wm-qo7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mDU-3b-2AY" secondAttribute="bottom" constant="8" id="mjB-dH-fDB"/>
+                            <constraint firstItem="TmX-Yt-k0q" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="sWg-wz-emf"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="378" y="339"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon-add" width="25" height="24"/>
+        <image name="inbox" width="250" height="444"/>
+    </resources>
 </document>
