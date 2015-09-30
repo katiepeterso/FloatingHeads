@@ -27,6 +27,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" image="icon-add"/>
+                                <connections>
+                                    <segue destination="qmI-Hu-iPZ" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="nD1-06-NZn"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -40,14 +43,67 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="addFloatingButton" destination="mDU-3b-2AY" id="Cxw-kN-M62"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="378" y="339"/>
         </scene>
+        <!--Floating Menu Controller-->
+        <scene sceneID="kgz-fO-VpG">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="qmI-Hu-iPZ" customClass="FloatingMenuController" customModule="FloatingHeads" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6AA-aW-Hlq"/>
+                        <viewControllerLayoutGuide type="bottom" id="dMe-21-C5M"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AER-pt-2Ao">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RKV-xl-1qJ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="gME-Ik-lnS">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x45-0Y-aWe" customClass="FloatingButton" customModule="FloatingHeads" customModuleProvider="target">
+                                <rect key="frame" x="315" y="619" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="JfC-Be-i3E"/>
+                                    <constraint firstAttribute="height" constant="40" id="rez-Vn-byN"/>
+                                </constraints>
+                                <state key="normal" image="icon-close"/>
+                                <connections>
+                                    <action selector="closeFloatingMenu:" destination="qmI-Hu-iPZ" eventType="touchUpInside" id="LOd-er-0SZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dMe-21-C5M" firstAttribute="top" secondItem="x45-0Y-aWe" secondAttribute="bottom" constant="8" id="Ma8-H6-Xgd"/>
+                            <constraint firstAttribute="trailing" secondItem="x45-0Y-aWe" secondAttribute="trailing" constant="20" id="qT1-By-Hm2"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="cancelButton" destination="x45-0Y-aWe" id="M4y-H5-fYo"/>
+                        <outlet property="floatingVisualEffectView" destination="RKV-xl-1qJ" id="yNs-uF-ELy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cLa-Nh-uQu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.5" y="314.5"/>
+        </scene>
     </scenes>
     <resources>
         <image name="icon-add" width="25" height="24"/>
-        <image name="inbox" width="250" height="444"/>
+        <image name="icon-close" width="19" height="19"/>
+        <image name="inbox" width="375" height="667"/>
     </resources>
 </document>

@@ -14,6 +14,7 @@
 		AAFA682A1BBC566D009BD1BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAFA68281BBC566D009BD1BD /* LaunchScreen.storyboard */; };
 		AAFA68321BBC5931009BD1BD /* FloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFA68311BBC5931009BD1BD /* FloatingButton.swift */; settings = {ASSET_TAGS = (); }; };
 		AAFA68341BBC5AA5009BD1BD /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFA68331BBC5AA5009BD1BD /* UIColorExtension.swift */; settings = {ASSET_TAGS = (); }; };
+		AAFA68361BBC8608009BD1BD /* FloatingMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFA68351BBC8608009BD1BD /* FloatingMenuController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		AAFA682B1BBC566D009BD1BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAFA68311BBC5931009BD1BD /* FloatingButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingButton.swift; sourceTree = "<group>"; };
 		AAFA68331BBC5AA5009BD1BD /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		AAFA68351BBC8608009BD1BD /* FloatingMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingMenuController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				AAFA681F1BBC566D009BD1BD /* AppDelegate.swift */,
 				AAFA68211BBC566D009BD1BD /* ViewController.swift */,
+				AAFA68351BBC8608009BD1BD /* FloatingMenuController.swift */,
 				AAFA68311BBC5931009BD1BD /* FloatingButton.swift */,
 				AAFA68331BBC5AA5009BD1BD /* UIColorExtension.swift */,
 				AAFA68231BBC566D009BD1BD /* Main.storyboard */,
@@ -143,6 +146,7 @@
 				AAFA68221BBC566D009BD1BD /* ViewController.swift in Sources */,
 				AAFA68201BBC566D009BD1BD /* AppDelegate.swift in Sources */,
 				AAFA68321BBC5931009BD1BD /* FloatingButton.swift in Sources */,
+				AAFA68361BBC8608009BD1BD /* FloatingMenuController.swift in Sources */,
 				AAFA68341BBC5AA5009BD1BD /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

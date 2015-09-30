@@ -9,10 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var addFloatingButton: FloatingButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        addFloatingButton.buttonBackgroundColor = UIColor.flatBlueColor()
+
+        
     }
 
     override func didReceiveMemoryWarning() {

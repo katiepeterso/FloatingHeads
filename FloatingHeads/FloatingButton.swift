@@ -10,14 +10,15 @@ import UIKit
 
 class FloatingButton: UIButton {
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        setup()
+    var buttonBackgroundColor = UIColor() {
+        didSet {
+            setup(buttonBackgroundColor.pixelImage())
+        }
     }
     
-    func setup () {
+    func setup (backgroundImage:UIImage) {
         tintColor = UIColor.whiteColor()
-        setBackgroundImage(UIColor.flatBlueColor().pixelImage(), forState: UIControlState.Normal)
+        setBackgroundImage(backgroundImage, forState: UIControlState.Normal)
         layer.cornerRadius = frame.width/2
         layer.masksToBounds = true
         
