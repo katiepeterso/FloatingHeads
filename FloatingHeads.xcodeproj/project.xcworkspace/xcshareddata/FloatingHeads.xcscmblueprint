@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4EAFDB35A7D0DDC20129CF6C1F53C5FDB3CB0FDA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "4EAFDB35A7D0DDC20129CF6C1F53C5FDB3CB0FDA" : 0,
+    "DC22E5519872F76C77D53A43655886FBD8E7A803" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "1360CE8D-2EC4-46C3-9EFC-8314C007E794",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "4EAFDB35A7D0DDC20129CF6C1F53C5FDB3CB0FDA" : "FloatingHeads\/",
+    "DC22E5519872F76C77D53A43655886FBD8E7A803" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "FloatingHeads",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "FloatingHeads.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/katiepeterso\/FloatingHeads.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4EAFDB35A7D0DDC20129CF6C1F53C5FDB3CB0FDA"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/katiepeterso\/lighthouse.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DC22E5519872F76C77D53A43655886FBD8E7A803"
+    }
+  ]
+}

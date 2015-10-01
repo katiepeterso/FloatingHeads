@@ -22,5 +22,6 @@ class FloatingButton: UIButton {
         layer.cornerRadius = frame.width/2
         layer.masksToBounds = true
         
+        UIButtonType.System
     }
 }
