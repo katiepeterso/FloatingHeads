@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var addFloatingButton: FloatingButton!
+    var delegate: FloatingMenuControllerDelegate? 
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +25,18 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    func cancel() {
+        print("Cancel Button")
+    }
+    
+    func newContact() {
+        print("New Contact")
+    }
+    
+    func selectContact() {
+        print("Selected Contact")
+    }
 
 }
 

@@ -8,6 +8,13 @@
 
 import UIKit
 
+protocol FloatingMenuControllerDelegate {
+    func cancel()
+    func newContact()
+    func selectContact()
+}
+
+
 class FloatingMenuController: UIViewController {
     @IBOutlet weak var cancelButton: FloatingButton!
     @IBOutlet weak var floatingVisualEffectView: UIVisualEffectView!
