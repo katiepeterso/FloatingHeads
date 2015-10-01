@@ -19,6 +19,8 @@ class FloatingMenuController: UIViewController {
     @IBOutlet weak var cancelButton: FloatingButton!
     @IBOutlet weak var floatingVisualEffectView: UIVisualEffectView!
     
+    var delegate: FloatingMenuControllerDelegate?
+    
     var buttonItems = [UIButton]()
     
     override func viewDidLoad() {
@@ -55,6 +57,10 @@ class FloatingMenuController: UIViewController {
         
         buttonItems += [newContact, model4, model5, model6, model7, model8]
         
+        for button in buttonItems {
+            button.addTarget(self, action: "handleMenuButton:", forControlEvents: .TouchUpInside)
+        }
+        
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -87,8 +93,20 @@ class FloatingMenuController: UIViewController {
     }
     
     @IBAction func closeFloatingMenu(sender: FloatingButton) {
-        
+        delegate?.cancel()
         dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func handleMenuButton(sender: AnyObject) {
+        let button = sender as! UIButton
+        if let index = buttonItems.indexOf(button) {
+            if index == 0 {
+                delegate?.newContact()
+            }
+            else {
+                delegate?.selectContact()
+            }
+        }
     }
     
 }

@@ -21,7 +21,6 @@ class FloatingButton: UIButton {
         setBackgroundImage(backgroundImage, forState: UIControlState.Normal)
         layer.cornerRadius = frame.width/2
         layer.masksToBounds = true
-        
         UIButtonType.System
     }
 }
