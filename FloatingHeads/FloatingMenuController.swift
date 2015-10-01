@@ -21,6 +21,7 @@ class FloatingMenuController: UIViewController {
         cancelButton.buttonBackgroundColor = UIColor.flatRedColor()
         
         let newContact = FloatingButton()
+        newContact.setImage(UIImage(named: "icon-add"), forState: UIControlState.Normal)
         newContact.frame.size = CGSize(width: 40, height: 40)
         newContact.buttonBackgroundColor = UIColor.flatBlueColor()
         
@@ -62,9 +63,19 @@ class FloatingMenuController: UIViewController {
     
     func layoutButtons() {
         for (index, button) in buttonItems.enumerate() {
-            button.center = CGPointMake(cancelButton.center.x, cancelButton.center.y - CGFloat((index + 1)*70))
+            
             view.addSubview(button)
-            view.bringSubviewToFront(button)
+            button.translatesAutoresizingMaskIntoConstraints = false
+            
+            let x = NSLayoutConstraint(item: button, attribute: NSLayoutAttribute.RightMargin, relatedBy: NSLayoutRelation.Equal, toItem: cancelButton, attribute: NSLayoutAttribute.RightMargin, multiplier: 1.0, constant: 0)
+            
+            let y = NSLayoutConstraint(item: button, attribute: NSLayoutAttribute.BottomMargin, relatedBy: NSLayoutRelation.Equal, toItem: cancelButton, attribute: NSLayoutAttribute.BottomMargin, multiplier: 1.0, constant: CGFloat((index + 1)*(-48)))
+            
+            let width = NSLayoutConstraint(item: button, attribute: NSLayoutAttribute.Width, relatedBy: NSLayoutRelation.Equal, toItem: nil, attribute: NSLayoutAttribute.NotAnAttribute, multiplier: 1, constant: 40)
+            
+            let height = NSLayoutConstraint(item: button, attribute: NSLayoutAttribute.Height, relatedBy: NSLayoutRelation.Equal, toItem: nil, attribute: NSLayoutAttribute.NotAnAttribute, multiplier: 1, constant: 40)
+            
+            view.addConstraints([x, y, width, height])
         }
     }
     
