@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "FloatingButton.setup() -&gt; ():FloatingButton.swift">
+      </ContextState>
+      <ContextState
+         contextName = "FloatingMenuController.layoutButtons() -&gt; ():FloatingMenuController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "">
+            </PersistentString>
+            <PersistentString
+               value = "button.frame.origin">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

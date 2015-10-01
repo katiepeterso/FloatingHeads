@@ -13,14 +13,14 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inbox" translatesAutoresizingMaskIntoConstraints="NO" id="TmX-Yt-k0q">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mDU-3b-2AY" customClass="FloatingButton" customModule="FloatingHeads" customModuleProvider="target">
-                                <rect key="frame" x="315" y="619" width="40" height="40"/>
+                                <rect key="frame" x="540" y="552" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="h1k-II-4oP"/>
                                     <constraint firstAttribute="width" constant="40" id="jRB-Bq-buf"/>
@@ -42,7 +42,6 @@
                             <constraint firstItem="TmX-Yt-k0q" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="sWg-wz-emf"/>
                         </constraints>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="addFloatingButton" destination="mDU-3b-2AY" id="Cxw-kN-M62"/>
                     </connections>
@@ -60,7 +59,7 @@
                         <viewControllerLayoutGuide type="bottom" id="dMe-21-C5M"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="AER-pt-2Ao">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RKV-xl-1qJ">
@@ -72,7 +71,7 @@
                                 <blurEffect style="light"/>
                             </visualEffectView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x45-0Y-aWe" customClass="FloatingButton" customModule="FloatingHeads" customModuleProvider="target">
-                                <rect key="frame" x="315" y="619" width="40" height="40"/>
+                                <rect key="frame" x="540" y="552" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="JfC-Be-i3E"/>
                                     <constraint firstAttribute="height" constant="40" id="rez-Vn-byN"/>
